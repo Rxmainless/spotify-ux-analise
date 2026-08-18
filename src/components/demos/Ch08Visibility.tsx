@@ -54,14 +54,14 @@ export default function Ch08Visibility() {
           ].map((m) => (
             <div key={m.l} style={{ backgroundColor: "#1e1e1e", borderRadius: "10px", padding: "0.85rem 0.75rem", textAlign: "center" }}>
               <div style={{ color: m.c, fontFamily: "var(--font-mono)", fontWeight: 700, fontSize: "1.4rem", lineHeight: 1 }}>{m.v}</div>
-              <div style={{ color: "#2e2e2e", fontFamily: "var(--font-sans)", fontSize: "0.68rem", marginTop: "0.25rem" }}>{m.l}</div>
+              <div style={{ color: "var(--label)", fontFamily: "var(--font-sans)", fontSize: "0.68rem", marginTop: "0.25rem" }}>{m.l}</div>
             </div>
           ))}
         </div>
         <div style={{ backgroundColor: "#1e1e1e", borderRadius: "10px", padding: "0.85rem", marginBottom: "1.25rem", display: "flex", alignItems: "center", gap: "0.85rem" }}>
           <div style={{ textAlign: "center", flexShrink: 0 }}>
             <div style={{ color: "var(--warn)", fontFamily: "var(--font-mono)", fontWeight: 800, fontSize: "2rem", lineHeight: 1 }}>5,7</div>
-            <div style={{ color: "#2e2e2e", fontFamily: "var(--font-sans)", fontSize: "0.58rem" }}>/10</div>
+            <div style={{ color: "var(--label)", fontFamily: "var(--font-sans)", fontSize: "0.58rem" }}>/10</div>
           </div>
           <div>
             <div style={{ color: "var(--text)", fontFamily: "var(--font-sans)", fontWeight: 600, fontSize: "0.85rem" }}>Nota de reputação</div>

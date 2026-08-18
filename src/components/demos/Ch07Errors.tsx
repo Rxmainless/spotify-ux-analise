@@ -69,7 +69,7 @@ export default function Ch07Errors() {
               <div style={{ color: deleteState === "deleted" ? "#444" : "var(--text)", fontFamily: "var(--font-sans)", fontWeight: 600, fontSize: "0.88rem", textDecoration: deleteState === "deleted" ? "line-through" : "none", transition: "all 0.3s" }}>
                 Minha Playlist Top 2024
               </div>
-              <div style={{ color: "#2e2e2e", fontFamily: "var(--font-sans)", fontSize: "0.72rem" }}>42 músicas</div>
+              <div style={{ color: "var(--label)", fontFamily: "var(--font-sans)", fontSize: "0.72rem" }}>42 músicas</div>
             </div>
             {deleteState === "idle" || deleteState === "undone" ? (
               <button onClick={handleDelete}

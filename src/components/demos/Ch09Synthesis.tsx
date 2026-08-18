@@ -93,8 +93,8 @@ export default function Ch09Synthesis() {
                 <span style={{ backgroundColor: r.color + "22", color: r.color, fontFamily: "var(--font-mono)", fontWeight: 700, fontSize: "0.62rem", padding: "0.2rem 0.5rem", borderRadius: "9999px", flexShrink: 0 }}>{r.id}</span>
                 <span style={{ color: "var(--text)", fontFamily: "var(--font-sans)", fontWeight: 600, fontSize: "0.9rem", flex: 1 }}>{r.title}</span>
                 <div style={{ display: "flex", gap: "0.4rem", flexShrink: 0 }}>
-                  <span style={{ color: "#2e2e2e", fontFamily: "var(--font-mono)", fontSize: "0.55rem", backgroundColor: "#1e1e1e", padding: "0.15rem 0.4rem", borderRadius: "4px" }}>↑{r.priority}</span>
-                  <span style={{ color: "#2e2e2e", fontFamily: "var(--font-mono)", fontSize: "0.55rem", backgroundColor: "#1e1e1e", padding: "0.15rem 0.4rem", borderRadius: "4px" }}>⚙{r.effort}</span>
+                  <span style={{ color: "var(--label)", fontFamily: "var(--font-mono)", fontSize: "0.55rem", backgroundColor: "#1e1e1e", padding: "0.15rem 0.4rem", borderRadius: "4px" }}>↑{r.priority}</span>
+                  <span style={{ color: "var(--label)", fontFamily: "var(--font-mono)", fontSize: "0.55rem", backgroundColor: "#1e1e1e", padding: "0.15rem 0.4rem", borderRadius: "4px" }}>⚙{r.effort}</span>
                 </div>
                 <span style={{ color: "#333", fontFamily: "var(--font-mono)", fontSize: "0.7rem", flexShrink: 0 }}>{open === r.id ? "▲" : "▼"}</span>
               </button>

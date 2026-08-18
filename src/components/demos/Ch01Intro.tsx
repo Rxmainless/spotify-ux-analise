@@ -23,7 +23,6 @@ export default function Ch01Intro() {
   const rm = useReducedMotion();
   return (
     <div style={{ display: "flex", flexDirection: "column", gap: "1.5rem" }}>
-      {/* Method */}
       <div
         style={{
           backgroundColor: "var(--surface)",
@@ -34,9 +33,9 @@ export default function Ch01Intro() {
       >
         <div
           style={{
-            color: "#333",
+            color: "var(--muted)",
             fontFamily: "var(--font-mono)",
-            fontSize: "0.6rem",
+            fontSize: "0.72rem",
             letterSpacing: "0.12em",
             marginBottom: "1rem",
           }}
@@ -70,7 +69,6 @@ export default function Ch01Intro() {
         </div>
       </div>
 
-      {/* Structure */}
       <div
         style={{
           backgroundColor: "var(--surface)",
@@ -81,9 +79,9 @@ export default function Ch01Intro() {
       >
         <div
           style={{
-            color: "#333",
+            color: "var(--muted)",
             fontFamily: "var(--font-mono)",
-            fontSize: "0.6rem",
+            fontSize: "0.72rem",
             letterSpacing: "0.12em",
             marginBottom: "1rem",
           }}
@@ -108,9 +106,9 @@ export default function Ch01Intro() {
             >
               <span
                 style={{
-                  color: "#2e2e2e",
+                  color: "var(--muted)",
                   fontFamily: "var(--font-mono)",
-                  fontSize: "0.62rem",
+                  fontSize: "0.72rem",
                   width: "1.8rem",
                   flexShrink: 0,
                 }}
@@ -119,9 +117,9 @@ export default function Ch01Intro() {
               </span>
               <span
                 style={{
-                  color: "var(--muted)",
+                  color: "var(--text)",
                   fontFamily: "var(--font-sans)",
-                  fontSize: "0.88rem",
+                  fontSize: "0.9rem",
                 }}
               >
                 {s.t}

@@ -2,7 +2,6 @@ import { motion, AnimatePresence } from "motion/react";
 import { useReducedMotion } from "../hooks/useReducedMotion";
 import { type Chapter } from "../content/chapters";
 
-// Demos — one per chapter
 import Ch01Intro from "./demos/Ch01Intro";
 import Ch02Typography from "./demos/Ch02Typography";
 import Ch03Colors from "./demos/Ch03Colors";
@@ -57,9 +56,7 @@ export default function ChapterView({ chapter, direction }: ChapterViewProps) {
             paddingBottom: "3rem",
           }}
         >
-          {/* Chapter header */}
           <header style={{ marginBottom: "2rem" }}>
-            {/* Number + rule */}
             <div
               style={{
                 display: "flex",
@@ -85,28 +82,27 @@ export default function ChapterView({ chapter, direction }: ChapterViewProps) {
                     color: "var(--accent)",
                     fontFamily: "var(--font-mono)",
                     fontWeight: 700,
-                    fontSize: "0.62rem",
+                    fontSize: "0.65rem",
                   }}
                 >
                   {String(chapter.id).padStart(2, "0")}
                 </span>
               </div>
               <div style={{ flex: 1, height: "1px", backgroundColor: "#1e1e1e" }} />
-              {/* Tags */}
               <div style={{ display: "flex", gap: "0.4rem", flexWrap: "wrap", justifyContent: "flex-end" }}>
                 {chapter.tags.map((tag) => (
                   <span
                     key={tag}
                     style={{
-                      backgroundColor: "#1a1a1a",
-                      color: "#333",
+                      backgroundColor: "#1e1e1e",
+                      color: "var(--muted)",
                       fontFamily: "var(--font-mono)",
-                      fontSize: "0.55rem",
+                      fontSize: "0.72rem",
                       letterSpacing: "0.04em",
-                      paddingInline: "0.5rem",
-                      paddingBlock: "0.25rem",
+                      paddingInline: "0.55rem",
+                      paddingBlock: "0.28rem",
                       borderRadius: "9999px",
-                      border: "1px solid #222",
+                      border: "1px solid #333",
                     }}
                   >
                     {tag}
@@ -115,7 +111,6 @@ export default function ChapterView({ chapter, direction }: ChapterViewProps) {
               </div>
             </div>
 
-            {/* Title */}
             <h1
               style={{
                 fontFamily: "var(--font-sans)",
@@ -130,12 +125,11 @@ export default function ChapterView({ chapter, direction }: ChapterViewProps) {
               {chapter.title}
             </h1>
 
-            {/* Subtitle */}
             <p
               style={{
                 fontFamily: "var(--font-sans)",
-                color: "var(--subtle)",
-                fontSize: "clamp(0.9rem, 2vw, 1.05rem)",
+                color: "var(--muted)",
+                fontSize: "clamp(0.95rem, 2vw, 1.1rem)",
                 lineHeight: 1.45,
                 marginBottom: "1rem",
               }}
@@ -143,7 +137,6 @@ export default function ChapterView({ chapter, direction }: ChapterViewProps) {
               {chapter.subtitle}
             </p>
 
-            {/* Intro paragraph */}
             <p
               style={{
                 fontFamily: "var(--font-sans)",
@@ -156,7 +149,6 @@ export default function ChapterView({ chapter, direction }: ChapterViewProps) {
             </p>
           </header>
 
-          {/* Visual divider */}
           <div
             style={{
               display: "flex",
@@ -166,11 +158,10 @@ export default function ChapterView({ chapter, direction }: ChapterViewProps) {
             }}
           >
             <div style={{ flex: 1, height: "1px", backgroundColor: "#1e1e1e" }} />
-            <span style={{ color: "#2a2a2a", fontFamily: "var(--font-mono)", fontSize: "0.5rem" }}>▼</span>
+            <span style={{ color: "var(--label)", fontFamily: "var(--font-mono)", fontSize: "0.62rem" }}>▼</span>
             <div style={{ flex: 1, height: "1px", backgroundColor: "#1e1e1e" }} />
           </div>
 
-          {/* Demo section */}
           <section aria-label={`Demonstração: ${chapter.title}`}>
             <Demo chapter={chapter} />
           </section>

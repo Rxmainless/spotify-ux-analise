@@ -91,7 +91,7 @@ export default function Ch05Flow() {
             >
               <div style={{ display: "flex", alignItems: "center", gap: "0.75rem" }}>
                 <span style={{ color: "var(--accent)", fontFamily: "var(--font-mono)", fontSize: "1rem", flexShrink: 0 }}>{s.icon}</span>
-                <span style={{ color: "#2e2e2e", fontFamily: "var(--font-mono)", fontSize: "0.58rem", flexShrink: 0 }}>{s.n}</span>
+                <span style={{ color: "var(--label)", fontFamily: "var(--font-mono)", fontSize: "0.58rem", flexShrink: 0 }}>{s.n}</span>
                 <span style={{ color: "var(--text)", fontFamily: "var(--font-sans)", fontWeight: 600, fontSize: "0.9rem" }}>{s.label}</span>
               </div>
               {activeStep === i && (

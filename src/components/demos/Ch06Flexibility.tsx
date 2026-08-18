@@ -55,7 +55,7 @@ export default function Ch06Flexibility() {
                       <div key={j} style={{ width: "16px", height: "4px", borderRadius: "2px", backgroundColor: "#2a2a2a" }} />
                     ))}
                   </div>
-                  <div style={{ color: "#2e2e2e", fontFamily: "var(--font-mono)", fontSize: "0.52rem", marginTop: "0.2rem" }}>{p.steps} ETAPA{p.steps > 1 ? "S" : ""}</div>
+                  <div style={{ color: "var(--label)", fontFamily: "var(--font-mono)", fontSize: "0.52rem", marginTop: "0.2rem" }}>{p.steps} ETAPA{p.steps > 1 ? "S" : ""}</div>
                 </div>
               </div>
               {sel === i && (
