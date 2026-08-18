@@ -1,5 +1,7 @@
 {
-  "description": "Explore key UX/UI principles through an interactive, chapter-based web application designed for learners and professionals, featuring smooth navigation and accessibility.",
+  "title": "Spotify — Análise UX/UI",
+  "description": "Análise crítica de UX/UI do Spotify — apresentação interativa acadêmica",
+  "language": "pt-BR",
   "robots": {
     "index": false
   },
