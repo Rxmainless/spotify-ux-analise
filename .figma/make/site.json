@@ -1,0 +1,10 @@
+{
+  "description": "Explore key UX/UI principles through an interactive, chapter-based web application designed for learners and professionals, featuring smooth navigation and accessibility.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

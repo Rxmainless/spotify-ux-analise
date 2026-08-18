@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900&family=JetBrains+Mono:wght@400;500;700&display=swap");
+@import "tailwindcss";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --font-sans:
+    "DM Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  --font-mono: "JetBrains Mono", "Courier New", ui-monospace, monospace;
+  --accent: #1ed760;
+  --accent-old: #1db954;
+  --bg: #121212;
+  --bg-deep: #0d0d0d;
+  --surface: #181818;
+  --surface-2: #242424;
+  --text: #ffffff;
+  --muted: #b3b3b3;
+  --subtle: #8a8a8a;
+  --label: #8a8a8a;
+  --border: #222222;
+  --danger: #e91429;
+  --warn: #f59e0b;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--bg-deep);
+  color: var(--text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+  line-height: 1.5;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2a2a;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 17px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
