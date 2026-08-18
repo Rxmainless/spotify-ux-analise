@@ -1,37 +1,31 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900&family=JetBrains+Mono:wght@400;500;700&display=swap");
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import 'tailwindcss';
 
-*,
-*::before,
-*::after {
+*, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 :root {
-  --font-sans:
-    "DM Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    sans-serif;
-  --font-mono: "JetBrains Mono", "Courier New", ui-monospace, monospace;
-  --accent: #1ed760;
-  --accent-old: #1db954;
+  --font-sans: 'DM Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Courier New', ui-monospace, monospace;
+  --accent: #1ED760;
+  --accent-old: #1DB954;
   --bg: #121212;
   --bg-deep: #0d0d0d;
   --surface: #181818;
   --surface-2: #242424;
   --text: #FFFFFF;
-  --muted: #B3B3B3;
-  --subtle: #9a9a9a;
-  --label: #9a9a9a;
+  --muted: #C4C4C4;
+  --subtle: #A3A3A3;
+  --label: #A3A3A3;
   --border: #222222;
-  --danger: #e91429;
-  --warn: #f59e0b;
+  --danger: #E91429;
+  --warn: #F59E0B;
 }
 
-html {
-  font-size: 16px;
-}
+html { font-size: 16px; }
 
 body {
   background-color: var(--bg-deep);
@@ -43,37 +37,27 @@ body {
   line-height: 1.5;
 }
 
+/* Visible focus — meets WCAG 2.4.11 */
 :focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 2px;
   border-radius: 4px;
 }
 
-::-webkit-scrollbar {
-  width: 3px;
-  height: 3px;
-}
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-::-webkit-scrollbar-thumb {
-  background: #2a2a2a;
-  border-radius: 2px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: var(--accent);
-}
+/* Minimal scrollbar */
+::-webkit-scrollbar { width: 3px; height: 3px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #2a2a2a; border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: var(--accent); }
 
+/* Projector: minimum 15px for all body-level text */
 @media screen and (min-width: 1024px) {
-  html {
-    font-size: 17px;
-  }
+  html { font-size: 17px; }
 }
 
+/* Honour prefers-reduced-motion globally */
 @media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
+  *, *::before, *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
